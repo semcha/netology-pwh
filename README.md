@@ -15,12 +15,13 @@
 
 
 ## Data Quality (Soda Core)
+1. Установить [Python 3.11](https://www.python.org/downloads/release/python-3118/)
 1. Установить необходимые библиотеки Python
 `pip install soda-core==3.0.54 soda-core-postgres==3.0.54`
 1. Перейти в папку soda-demo `cd ./soda-demo`
-1. Тестируем соединение с Clickhouse командой `soda test-connection -d dwh -c configuration.yml`
-1. Запускаем data quality проверки командой `soda scan -d dwh -c configuration.yml dwh.yml`
+1. Протестировать соединение с Clickhouse командой `soda test-connection -d dwh -c configuration.yml`
+1. Запустить data quality проверки командой `soda scan -d dwh -c configuration.yml dwh.yml`
 
 
 ## Дополнительные ссылки
-* [Soda Core](https://docs.soda.io/soda-cl/metrics-and-checks.html#list-of-sodacl-metrics-and-checks)
+* [Список доступных проверок в Soda Core](https://docs.soda.io/soda-cl/metrics-and-checks.html#list-of-sodacl-metrics-and-checks)
