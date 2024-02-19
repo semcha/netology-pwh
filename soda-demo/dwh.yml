@@ -1,0 +1,8 @@
+checks for product_dim:
+  - duplicate_count(product_code) = 0
+  - row_count < 100
+
+checks for sales_fact:
+  - values in (month_id) must exist in month_dim (month_id)
+  - values in (product_id) must exist in product_dim (product_id)
+  - avg(sales) < 2000

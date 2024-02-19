@@ -1,0 +1,8 @@
+data_source dwh:
+  type: postgres
+  host: localhost
+  port: "9005"
+  username: admin
+  password: admin
+  database: datamart_layer
+  schema: datamart_layer
